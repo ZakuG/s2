@@ -18,6 +18,7 @@ export class HousingService {
       availableUnits: 4,
       wifi: true,
       laundry: true,
+      date: "2025-05-02",
     },
     {
       id: 1,
@@ -28,6 +29,7 @@ export class HousingService {
       availableUnits: 0,
       wifi: false,
       laundry: true,
+      date: "2025-04-24",
     },
     {
       id: 2,
@@ -38,6 +40,7 @@ export class HousingService {
       availableUnits: 1,
       wifi: false,
       laundry: false,
+      date: "2025-05-06",
     },
     {
       id: 3,
@@ -48,6 +51,7 @@ export class HousingService {
       availableUnits: 1,
       wifi: true,
       laundry: false,
+      date: "2025-05-04",
     },
     {
       id: 4,
@@ -58,6 +62,7 @@ export class HousingService {
       availableUnits: 1,
       wifi: true,
       laundry: false,
+      date: "2025-05-10",
     },
     {
       id: 5,
@@ -68,6 +73,7 @@ export class HousingService {
       availableUnits: 2,
       wifi: true,
       laundry: true,
+      date: "2025-05-12",
     },
     {
       id: 6,
@@ -78,6 +84,7 @@ export class HousingService {
       availableUnits: 5,
       wifi: true,
       laundry: true,
+      date: "2025-05-13",
     },
     {
       id: 7,
@@ -88,6 +95,7 @@ export class HousingService {
       availableUnits: 2,
       wifi: true,
       laundry: true,
+      date: "2025-05-14",
     },
     {
       id: 8,
@@ -98,6 +106,7 @@ export class HousingService {
       availableUnits: 10,
       wifi: false,
       laundry: false,
+      date: "2025-05-12",
     },
     {
       id: 9,
@@ -108,6 +117,7 @@ export class HousingService {
       availableUnits: 6,
       wifi: true,
       laundry: true,
+      date: "2025-05-02",
     },
   ];
 

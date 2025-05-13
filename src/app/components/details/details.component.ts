@@ -5,11 +5,12 @@ import { HousingService } from '../housing.service';
 import { Housinglocation } from '../housinglocation';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
   selector: 'app-details',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, DatePipe],
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
