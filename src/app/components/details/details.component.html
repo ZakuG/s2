@@ -35,12 +35,13 @@
         <input id="last-name" type="text" formControlName="lastName" />
         <label for="email">Email</label>
         <input id="email" type="email" formControlName="email" />
-        <p *ngIf="formSubmitted && !formWasValid" style="color: red;">
-          Por favor, rellena todos los campos y asegúrate de que el correo electrónico sea válido.
-        </p>
+        <div>
+        <label *ngIf="formSubmitted && !formWasValid" style="color: red;">
+          ⚠️ Por favor, asegúrate de rellenar todos los campos y de que el correo electrónico sea válido. ⚠️ 
+        </label>
+        </div>
+        <h1><button type="submit" class="primary">Apply now</button></h1>
         
-
-        <button type="submit" class="primary">Apply now</button>
       </form>
     </section>
 </article>

@@ -28,4 +28,27 @@
     content: "\203A";
     margin-left: 5px;
   }
+  .listing-cost {
+    padding: 10px 20px 0px 20px;
+  } 
+  .listing-icons {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 0 20px;
+    align-items: center;
+  }
+  
+  .listing-icon {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .listing-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    object-fit: contain;
+  }
   

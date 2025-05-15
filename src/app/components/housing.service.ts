@@ -7,8 +7,10 @@ import { Housinglocation } from './housinglocation';
 export class HousingService {
 
   constructor() { }
+
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
-  housinglocationList: Housinglocation [] = [
+
+  housinglocationList: Housinglocation[] = [
     {
       id: 0,
       name: 'Acme Fresh Start Housing',
@@ -19,6 +21,11 @@ export class HousingService {
       wifi: true,
       laundry: true,
       date: "2025-05-02",
+      type: 'Rent Home',
+      cost: 1200,
+      rooms: 3,
+      bathrooms: 2,
+      garaje: 1
     },
     {
       id: 1,
@@ -30,6 +37,11 @@ export class HousingService {
       wifi: false,
       laundry: true,
       date: "2025-04-24",
+      type: 'Sold Department',
+      cost: 950,
+      rooms: 2,
+      bathrooms: 1,
+      garaje: 0
     },
     {
       id: 2,
@@ -41,6 +53,11 @@ export class HousingService {
       wifi: false,
       laundry: false,
       date: "2025-05-06",
+      type: 'Rent Department',
+      cost: 800,
+      rooms: 1,
+      bathrooms: 1,
+      garaje: 0
     },
     {
       id: 3,
@@ -52,6 +69,11 @@ export class HousingService {
       wifi: true,
       laundry: false,
       date: "2025-05-04",
+      type: 'Sold Home',
+      cost: 1300,
+      rooms: 4,
+      bathrooms: 2,
+      garaje: 2
     },
     {
       id: 4,
@@ -63,6 +85,11 @@ export class HousingService {
       wifi: true,
       laundry: false,
       date: "2025-05-10",
+      type: 'Rent Home',
+      cost: 1000,
+      rooms: 3,
+      bathrooms: 2,
+      garaje: 1
     },
     {
       id: 5,
@@ -74,6 +101,11 @@ export class HousingService {
       wifi: true,
       laundry: true,
       date: "2025-05-12",
+      type: 'Sold Department',
+      cost: 1100,
+      rooms: 2,
+      bathrooms: 2,
+      garaje: 1
     },
     {
       id: 6,
@@ -85,6 +117,11 @@ export class HousingService {
       wifi: true,
       laundry: true,
       date: "2025-05-13",
+      type: 'Rent Department',
+      cost: 950,
+      rooms: 2,
+      bathrooms: 1,
+      garaje: 0
     },
     {
       id: 7,
@@ -96,6 +133,11 @@ export class HousingService {
       wifi: true,
       laundry: true,
       date: "2025-05-14",
+      type: 'Rent Home',
+      cost: 1400,
+      rooms: 4,
+      bathrooms: 3,
+      garaje: 2
     },
     {
       id: 8,
@@ -107,6 +149,11 @@ export class HousingService {
       wifi: false,
       laundry: false,
       date: "2025-05-12",
+      type: 'Sold Department',
+      cost: 890,
+      rooms: 1,
+      bathrooms: 1,
+      garaje: 0
     },
     {
       id: 9,
@@ -118,17 +165,23 @@ export class HousingService {
       wifi: true,
       laundry: true,
       date: "2025-05-02",
-    },
+      type: 'Rent Department',
+      cost: 980,
+      rooms: 3,
+      bathrooms: 2,
+      garaje: 1
+    }
   ];
 
-  getAllHouseingLocations(): Housinglocation[]{
-    return this.housinglocationList
+  getAllHouseingLocations(): Housinglocation[] {
+    return this.housinglocationList;
   }
-  
-  getHousingLocationById(id:number): Housinglocation | undefined {
-    return this.housinglocationList.find((Housinglocation) => Housinglocation.id === id);
+
+  getHousingLocationById(id: number): Housinglocation | undefined {
+    return this.housinglocationList.find(location => location.id === id);
   }
-  submitApplication(firstName:string, lastName: string, email:string){
+
+  submitApplication(firstName: string, lastName: string, email: string) {
     console.log(`FirstName: ${firstName} - LastName: ${lastName} - Email: ${email}`);
   }
 }

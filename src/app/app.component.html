@@ -1,14 +1,21 @@
 
 <main class="main">
-    <a routerLink="/">
-      <header class="brand-home">
+    <header class="brand-home" style="display: flex; align-items: center; justify-content: space-between;">
+      <a routerLink="/">
         <img class="brand-logo" src="assets/logo.svg" alt="logo" />
-      </header>
-    </a>
+      </a> 
+      <!-- Mostrar botón Perfil si hay usuario -->
+      <button *ngIf="isLoggedIn" routerLink="/perfil">Perfil</button>
+      <!-- Mostrar botón Login si NO hay usuario -->
+      <button *ngIf="!isLoggedIn" routerLink="/login">Login</button>
+      
+    </header>
     <section class="content">
       <router-outlet></router-outlet>
     </section>
+
   </main>
+<app-footer></app-footer>
   
   
   

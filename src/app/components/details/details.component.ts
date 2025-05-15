@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HousingService } from '../housing.service';
 import { Housinglocation } from '../housinglocation';
@@ -14,7 +14,8 @@ import { DatePipe } from '@angular/common';
   templateUrl: './details.component.html',
   styleUrl: './details.component.css'
 })
-export class DetailsComponent {
+export class DetailsComponent implements OnInit, OnChanges, OnDestroy {
+
   route: ActivatedRoute = inject (ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: Housinglocation | undefined;
@@ -31,6 +32,20 @@ export class DetailsComponent {
   }
   formSubmitted = false;
   formWasValid = false;
+
+  ngOnInit() {
+    console.log('Componente inicializado');
+  }
+
+  ngOnChanges() {
+    console.log('Propiedades cambiadas')
+  }
+
+  ngOnDestroy() {
+    console.log('Componente destruido')
+  }
+
+
   onSubmit() {
     this.formSubmitted = true;
     this.formWasValid = this.formAngular.valid;

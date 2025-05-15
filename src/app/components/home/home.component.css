@@ -14,13 +14,7 @@
     display: inline-block;
     width: 30%;
   }
-  button {
-    padding: 10px;
-    border: solid 1px var(--primary-color);
-    background: var(--primary-color);
-    color: white;
-    border-radius: 8px;
-  }
+
   @media (min-width: 500px) and (max-width: 768px) {
     .results {
         grid-template-columns: repeat(2, 1fr);
@@ -34,4 +28,34 @@
         grid-template-columns: 1fr;
     }
   }
+  .example-section {
+    margin: 12px 0;
+  }
   
+  .example-margin {
+    margin: 0 12px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 4px;
+  }
+  .example-container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+  .example-content {
+  top: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.example-radio-group {
+  display: block;
+  border: 1px solid #555;
+  margin: 20px;
+  padding: 10px;
+}
